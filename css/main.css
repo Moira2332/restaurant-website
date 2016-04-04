@@ -21,6 +21,10 @@ body {
   margin: 0;
 }
 
+header {
+  background-color: #e2e2e2;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -45,10 +49,121 @@ nav a:hover {
   color: #fff;
 }
 
+.logo {
+  width: 100%;
+  display: block;
+  max-width: 20%;
+  float: right;
+}
+
+.nav {
+  display: none;
+}
+
+.nav-check:checked ~.nav {
+  display: block;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.toggle {
+  display: block;
+  max-width: 10%;
+}
+
+.nav-lable {
+  cursor: pointer;
+}
+
+/*------------------------------*/
+
 .img-flex {
   width: 100%;
   display: block;
-  overflow: hidden;
-  max-width: 20%;
-  float: right;
+}
+
+h1 {
+  font-size: 100%;
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+p {
+  margin: 0 0 .5rem 0;
+  font-size:63%;
+}
+
+.text {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  padding-left: .5rem;
+}
+
+section {
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.4em;
+  border-radius: 8px;
+  border-width: 3px;
+  color: #fff;
+  border-color: #666;
+  background-color: #666;
+  border-style: solid;
+  font-size: .5rem;
+}
+
+.btn-subtle {
+  color: #fff;
+  border-color: #ccc;
+  background-color: #ccc;
+}
+/*------------------------------*/
+.card-img img {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40px;
+}
+
+.cards {
+  list-style-type: none;
+  padding: 1em;
+}
+
+.card-body h2 {
+  margin: 1rem 0 1rem 0;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+.card-body p {
+  margin: 0 0 1.5rem 0;
+  font-weight: lighter;
+}
+
+.card {
+  padding: 0;
+  margin-bottom: 0;
+  background-color: #e2e2e2;
+}
+
+li {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
