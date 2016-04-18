@@ -73,7 +73,7 @@ nav a:hover {
 .nav-check {
   position: absolute;
   top: -3em;
-  right: 0rem;
+  right: 0;
   margin: 0;
 }
 
@@ -167,7 +167,9 @@ section {
   border-color: #ccc;
   background-color: #ccc;
 }
+
 /*------------------------------*/
+
 .card-img img {
   display: block;
   margin-top: auto;
@@ -214,17 +216,23 @@ ul {
   background-color: #333;
   color: #fff;
 }
+
 /*------------------------------*/
+
 .person-img {
   display: block;
   width: 40%;
 }
+
 /*------------------------------*/
+
 h2,h3,h4,p {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
 /*------------------------------*/
+
 .float-right {
   float: right;
 }
@@ -242,13 +250,16 @@ h2,h3,h4,p {
 }
 
 @media only screen and (min-width: 25em) {
+
   html {
     font-size: 110%;
     line-height: 1.4;
   }
+
 }
 
 @media only screen and (min-width: 38em) {
+
   html {
     font-size: 120%;
     line-height: 1.4;
@@ -307,6 +318,7 @@ h2,h3,h4,p {
 }
 
 @media only screen and (min-width: 60em) {
+
   html {
     font-size: 130%;
     line-height: 1.5;
@@ -349,6 +361,7 @@ h2,h3,h4,p {
 }
 
 @media only screen and (min-width: 90em) {
+
   html {
     font-size: 150%;
     line-height: 1.5;
