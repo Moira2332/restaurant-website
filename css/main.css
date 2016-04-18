@@ -23,14 +23,17 @@ body {
 
 header {
   background-color: #e2e2e2;
+  overflow: hidden;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
-  float: left;
-  top: 0;
+  position: absolute;
+  top: 2.5rem;
   right: 0;
+  z-index: 1000;
+  list-style-type: none;
 }
 
 nav li {
@@ -42,6 +45,7 @@ nav a {
   padding: .5em .75em;
   color: #333;
   text-decoration: none;
+  background-color: #e2e2e2;
 }
 
 nav a:hover {
@@ -53,29 +57,36 @@ nav a:hover {
   width: 100%;
   display: block;
   max-width: 20%;
-  float: right;
+  float: left;
 }
 
 .nav {
   display: none;
+  margin: 0;
 }
 
-.nav-check:checked ~.nav {
+.nav-check:checked ~ .nav {
   display: block;
+  margin: 0;
 }
 
 .nav-check {
   position: absolute;
   top: -3em;
+  right: 0rem;
+  margin: 0;
 }
 
 .toggle {
   display: block;
-  max-width: 10%;
+  width: 40px;
+  margin: 0;
 }
 
-.nav-lable {
+.nav-label {
   cursor: pointer;
+  margin: 0;
+  float: right;
 }
 
 /*------------------------------*/
@@ -122,6 +133,7 @@ section {
   border-style: solid;
   font-size: 1rem;
   margin-left: 1rem;
+  z-index: 2000;
 }
 
 .btn-subtle {
@@ -158,6 +170,10 @@ section {
   margin-bottom: 0;
   background-color: #e2e2e2;
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
 
 li {
   margin: 0;
@@ -166,6 +182,11 @@ li {
 ul {
   padding: 0;
   margin: 0;
+}
+
+.card a:hover {
+  background-color: #333;
+  color: #fff;
 }
 /*------------------------------*/
 .person-img {
@@ -188,4 +209,46 @@ h2,h3,h4,p {
 
 .thoughts {
   clear: right;
+}
+
+.map {
+  clear: right;
+}
+
+@media only screen and (min-width: 25em) {
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  html {
+    font-size: 130%;
+    line-height: 1.4;
+  }
+
+  .float-right {
+    width: 30%;
+    clear: both;
+  }
+
+  .person-img {
+    width: 30%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 140%;
+    line-height: 1.5;
+  }
 }
