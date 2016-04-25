@@ -142,6 +142,7 @@ nav li {
   width: 80%;
   background-color: rgba(0, 0, 0, .3);
   border-radius: 10px;
+  padding-bottom: 1rem;
 }
 
 section {
@@ -250,11 +251,16 @@ h2, h3, h4, p {
   clear: right;
 }
 
-@media only screen and (min-width: 25em) {
+.third-img {
+  display: none;
+}
 
-  html {
-    font-size: 110%;
-    line-height: 1.4;
+@media only screen and (min-width: 25em) {
+  .third-img {
+    display: none;
+  }
+  .second-img {
+    display: none;
   }
 
 }
@@ -262,7 +268,7 @@ h2, h3, h4, p {
 @media only screen and (min-width: 38em) {
 
   html {
-    font-size: 120%;
+    font-size: 110%;
     line-height: 1.4;
   }
 
@@ -302,6 +308,10 @@ h2, h3, h4, p {
   }
 
   .second-img {
+    display: none;
+  }
+
+  .third-img {
     display: block;
     width: 100%;
   }
@@ -321,8 +331,17 @@ h2, h3, h4, p {
 @media only screen and (min-width: 60em) {
 
   html {
-    font-size: 130%;
+    font-size: 120%;
     line-height: 1.5;
+  }
+
+  .second-img {
+    display: block;
+    width: 100%;
+  }
+
+  .third-img {
+    display: none;
   }
 
   h2 {
@@ -342,7 +361,11 @@ h2, h3, h4, p {
   }
 
   nav li {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    max-width: 8rem;
   }
 
   .cards h2 {
@@ -364,7 +387,7 @@ h2, h3, h4, p {
 @media only screen and (min-width: 90em) {
 
   html {
-    font-size: 150%;
+    font-size: 130%;
     line-height: 1.5;
   }
 
