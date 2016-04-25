@@ -58,6 +58,7 @@ nav a:hover {
   display: block;
   max-width: 20%;
   float: left;
+  padding-bottom: 1rem;
 }
 
 .nav {
@@ -256,9 +257,11 @@ h2, h3, h4, p {
 }
 
 @media only screen and (min-width: 25em) {
+
   .third-img {
     display: none;
   }
+
   .second-img {
     display: none;
   }
@@ -283,7 +286,7 @@ h2, h3, h4, p {
   }
 
   .person-img {
-    width: 30%;
+    width: 20%;
   }
 
   .nav-label {
@@ -326,6 +329,10 @@ h2, h3, h4, p {
     display: inline-block;
   }
 
+  .card-img img {
+    width: 50px;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -353,7 +360,7 @@ h2, h3, h4, p {
   }
 
   .person-img {
-    width: 10%;
+    width: 20%;
   }
 
   .float-right {
@@ -369,7 +376,7 @@ h2, h3, h4, p {
   }
 
   .cards h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .our-experts p {
